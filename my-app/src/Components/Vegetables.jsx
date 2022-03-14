@@ -38,8 +38,7 @@ function Vegetables() {
 function decrement(id){
   //  console.log(id)
  let newItems =[...items];
- newItems[id] = {...items[id],quantity:items[id].quantity-1
- };
+ newItems[id] = {...items[id],quantity:items[id].quantity-1};
 
  setItems(newItems)
 }
@@ -47,7 +46,7 @@ function decrement(id){
 
   return (
       <>
-    <div>Vegetables</div>
+    <h1>Vegetables</h1>
     {
        items.map(({name,quantity,id}) => 
        <div> 
